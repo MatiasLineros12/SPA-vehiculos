@@ -1,8 +1,13 @@
 # SPA-vehiculos
 Single Page Application para la gestión de vehículos.
 
-Desarrollado con Laravel 6 (Backend) y Angular 11 (Frontend).
-  - Desarollo de api RESTful
+Tecnologías de software:
+  - PHP Laravel 6
+  - AngularJS 11
+  - Api RESTful (Json)
+  - Bootstrap 
+  - MySQL
+  - HTML
 
 date dev: 2020
 
