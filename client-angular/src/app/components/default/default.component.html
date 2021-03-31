@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<br/>
+<div class="loading" *ngIf="!cars">
+	Cargando
+</div>
+<table class="table table-hover" *ngIf="cars">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">¿Se vende?</th>
+      <th colspan="3" scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <th scope="row">{{car.id}}</th>
+      <td>{{car.title}}</td>
+      <td>{{car.price}}</td>
+      <td>
+      		<span *ngIf="car.status == 'true'">Si</span>
+      		<span *ngIf="car.status == 'false'">No</span>
+      </td>
+      <td><a [routerLink]="['/vehiculo', car.id]">Ver</a></td>
+      <td><a [routerLink]="['/editar-vehiculo', car.id]">Editar</a></td>
+      <td><a (click)="deleteCar(car.id)" style="color:red">Eliminar</a></td>
+    </tr>
+  </tbody>
+</table>

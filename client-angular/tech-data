@@ -1,0 +1,7 @@
+APLICACION CLIENTE DE UNA API DE LARAVEL...
+SE LE INSTALO JQUERY Y BOOTSTRAP, PACKAGE.JSON Y ANGULAR.JSON (SCRIPTS y styles)
+
+para la gestion de autenticacion se utilizara el local storage del navegador.
+->local storage: almacena datos de manera local y de forma indefinida
+->sesion storage: por otro lado, este almacenamiento tambien es local solo que si la pestaña se cierra, desaparecen los datos almacenados.
+este almacenamiento local, permite disminuir las peticiones al servidor.

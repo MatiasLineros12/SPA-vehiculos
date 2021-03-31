@@ -1,0 +1,26 @@
+<h1>Ver vehículo</h1>
+<br/>
+<form class="col-md-12">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="title">Titulo</label>
+      <input disabled name="title" type="text" class="form-control" #title="ngModel" [(ngModel)]="car.title">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="price">Precio</label>
+      <input disabled name="price" type="text" class="form-control" #price="ngModel" [(ngModel)]="car.price"> 
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="status">¿A la venta?</label>
+      <input  disabled name="status" type="text" class="form-control" #status="ngModel" [(ngModel)]="car.status">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="description">Descripción</label>
+      <textarea disabled name="description" type="text" class="form-control" #description="ngModel" [(ngModel)]="car.description"></textarea>
+    </div>
+  </div>
+</form>
